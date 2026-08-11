@@ -81,7 +81,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-} 
+}
 
 .d2-icon i {
     font-size: 24px;
@@ -109,9 +109,102 @@
     grid-template-columns: 240px 240px 240px 240px;
     gap: 20px;
 }
-.d3-box{
+
+.d3-box {
     background-color: #ffffff;
-    align-items: center;    
+    align-items: center;
     text-align: center;
 }
 
+/* container 4 */
+.cont-4 {
+    height: 450px;
+    background-color: #182b48;
+}
+
+.d4-heading {
+    color: #ffffff;
+}
+
+.d4-box {
+    background-color: #ffffff1A;
+    text-align: center;
+}
+
+.d4box-head {
+    color: #ffffff;
+}
+
+.d4box-par {
+    color: #d1d5db;
+}
+
+.number {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #22c55e;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* container 5 */
+.cont-5 {
+    height: 650px;
+}
+
+.d5-boxes {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    gap: 30px;
+}
+
+.d5-box {
+    background-color: #f8fafc;
+    height: 410px;
+    padding: 34px;
+    border-radius: 10px;
+}
+
+.d5-lists {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    
+}
+.d5-box h2{
+    font-size: 20px;
+    color: #182b48;
+}
+.d5-lists i{
+     font-size: 14px;
+     color: #16a34a;
+}
+.d5-lists p{
+    font-size: 16px;
+    font-family: "ui-sans-serif,system-ui";
+    color: #868080;
+    margin-left: 15px;
+    
+}
+.d5-lists li{
+    display: flex;
+}
+/* container 6 */
+.cont-6{
+    background-color: #f8fafc;
+    height: 650px;
+}
+.d5-box{
+    background-color: #ffffff;
+}
+.d5-boxB{
+    background-color: #fef2f2;
+}
