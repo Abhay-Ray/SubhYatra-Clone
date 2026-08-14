@@ -476,7 +476,8 @@ body {
     justify-content: center;
     color: #182B48;
 }
-.d5-iconB{
+
+.d5-iconB {
     background-color: #182B48;
     color: #ffd304;
 }
@@ -484,7 +485,7 @@ body {
 
 .d5-icon i {
     font-size: 24px;
-   
+
 }
 
 .rides h2 {
@@ -516,7 +517,8 @@ body {
 
 .d6-boxes {
     display: grid;
-    grid-template-columns: repeat(3, 300px);;
+    grid-template-columns: repeat(3, 300px);
+    ;
     gap: 15px;
 }
 

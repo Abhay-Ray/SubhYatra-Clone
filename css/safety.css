@@ -316,7 +316,7 @@ body {
     flex-direction: column;
     gap: 15px;
     margin-bottom: 25px;
-    
+
 }
 
 .top-det i {
@@ -328,7 +328,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
-   
+
     /* margin-top: 15px; */
 }
 
