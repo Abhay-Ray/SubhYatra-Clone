@@ -2,7 +2,103 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "system-ui", "ui-sans-serif", "Poppins";
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.995);
+    z-index: 1000;
+}
+
+
+.navbar {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.logo a {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #182B48;
+    line-height: 1;
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+}
+
+.nav-links a {
+    color: #182B48;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.nav-links a:hover {
+    color: #ffd400;
+}
+
+.download-btn {
+    padding: 14px 28px;
+    border: none;
+    outline: none;
+    background: #ffd400;
+    color: #111;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 35px;
+    cursor: pointer;
+
+}
+
+.download-btn:hover {
+    background: white;
+}
+
+body {
+    height: 100vh;
+}
+
+/* top little space */
+.nav-space {
+    height: 110px;
+    background-color: rgb(238, 239, 240);
 }
 
 /* container 1 */
@@ -219,8 +315,8 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-bottom: 15px;
-    border: 1px solid black;
+    margin-bottom: 25px;
+    
 }
 
 .top-det i {
@@ -232,7 +328,7 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    border: 1px solid black;
+   
     /* margin-top: 15px; */
 }
 
@@ -243,7 +339,7 @@
 }
 
 .box-line hr {
-    margin-top: 10px;
+    margin-top: 18px;
 }
 
 .det-line1 {

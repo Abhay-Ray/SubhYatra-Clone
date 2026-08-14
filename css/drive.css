@@ -2,9 +2,106 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "system-ui", "ui-sans-serif", "Poppins";
 }
 
+/* HEADER */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.995);
+    z-index: 1000;
+}
+
+
+.navbar {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.logo a {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #182B48;
+    line-height: 1;
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+}
+
+.nav-links a {
+    color: #182B48;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.nav-links a:hover {
+    color: #ffd400;
+}
+
+.download-btn {
+    padding: 14px 28px;
+    border: none;
+    outline: none;
+    background: #ffd400;
+    color: #111;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 35px;
+    cursor: pointer;
+
+}
+
+.download-btn:hover {
+    background: white;
+}
+
+body {
+    height: 100vh;
+}
+
+/* top little space */
+.nav-space {
+    height: 110px;
+    background-color: rgb(238, 239, 240);
+}
+
+/* container 1 */
 .cont-1 {
     height: 400px;
     background-color: #182B48;
@@ -338,7 +435,7 @@
 
 .join-section h1 {
     text-align: center;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
     color: #182b48;
     margin-bottom: 55px;
@@ -379,8 +476,8 @@
 /* Number circle */
 
 .number {
-    width: 61px;
-    height: 61px;
+    width: 56px;
+    height: 56px;
     flex-shrink: 0;
     border-radius: 50%;
     background: #ffd304;
@@ -388,7 +485,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
 }
 
@@ -398,7 +495,7 @@
     height: 2px;
     background: #ffefa0;
     /* flex: 1; */
-    
+
 }
 
 
@@ -409,7 +506,7 @@
 }
 
 .step-content h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: #182B48;
     margin-bottom: 13px;
@@ -417,13 +514,14 @@
 
 .step-content p {
     color: #868680;
-    font-size: 15.5px;
+    font-size: 14px;
     line-height: 1.45;
     max-width: 245px;
     margin: 0 auto;
 }
+
 /* container 7 */
-.cont-7{
+.cont-7 {
     height: 300px;
     background-color: #f8fafc;
     text-align: center;
@@ -433,20 +531,24 @@
     justify-content: center;
     gap: 20px;
 }
-.d7-head{
+
+.d7-head {
     font-size: 30px;
     color: #182B48;
 }
-.d7-par{
+
+.d7-par {
     font-size: 16px;
     color: #868680;
 }
-.d7-buttons{
+
+.d7-buttons {
     display: flex;
     gap: 20px;
 
 }
-.dwnld-btn{
+
+.dwnld-btn {
     font-size: 14px;
     font-weight: bold;
     color: #182B48;
@@ -455,10 +557,12 @@
     border: none;
     border-radius: 20px;
 }
-.dwnld-btn i{
+
+.dwnld-btn i {
     margin-left: 10px;
 }
-.read-btn{
+
+.read-btn {
     font-size: 14px;
     font-weight: bold;
     color: #182B48;
