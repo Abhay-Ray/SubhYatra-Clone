@@ -186,7 +186,7 @@ body {
 
 .top-hero {
   display: flex;
-  gap: 0;
+  gap: 10px;
 }
 
 .top-hero p {
