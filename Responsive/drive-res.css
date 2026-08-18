@@ -1,0 +1,365 @@
+.menu-btn,
+.menu-toggle,
+.mobile-menu {
+    display: none;
+}
+
+.mobile-logo,
+.mobile-logo:hover,
+.mobile-logo:focus,
+.mobile-logo:active {
+    background-color: transparent;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
+}
+
+/* Mobile screens only */
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    header {
+        height: 88px;
+        background-color: #ffffff;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.14);
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 21px 17px;
+    }
+
+    .logo {
+        gap: 14px;
+    }
+
+    .logo img {
+        width: 43px;
+        height: 43px;
+    }
+
+    .logo a {
+        color: #182b48;
+        font-size: 1.65rem;
+    }
+
+    .nav-links,
+    .download-btn {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+        color: #182b48;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        display: block;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        background-color: #ffffff;
+        color: #182b48;
+        box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+        transform: translateY(-105%);
+        transition: transform 0.3s ease;
+        z-index: 1100;
+    }
+
+    .menu-toggle:checked ~ .mobile-menu {
+        transform: translateY(0);
+    }
+
+    .mobile-menu-head {
+        height: 88px;
+        padding-left: 17px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f1f3f6;
+    }
+
+    .mobile-logo {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: #182b48;
+        text-decoration: none;
+    }
+
+    .mobile-logo img {
+        width: 43px;
+        height: 43px;
+    }
+
+    .mobile-logo span {
+        font-size: 1.65rem;
+        font-weight: bold;
+    }
+
+    .close-menu {
+        width: 43px;
+        height: 46px;
+        border: 2px solid #f0a000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .mobile-nav-links {
+        padding: 10px 22px;
+        list-style: none;
+    }
+
+    .mobile-nav-links a {
+        display: block;
+        padding: 18px 17px;
+        color: #182b48;
+        font-size: 1.1rem;
+        text-decoration: none;
+    }
+
+    .mobile-menu-bottom {
+        padding: 18px 35px;
+        border-top: 1px solid #e5e7eb;
+    }
+
+    .mobile-menu-bottom button {
+        width: 100%;
+        padding: 13px;
+        border: 0;
+        border-radius: 30px;
+        background-color: #ffd400;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .nav-space {
+        height: 105px;
+    }
+
+    .cont-1 {
+        height: 388px;
+        padding: 60px 20px;
+        background-color: #1c2854;
+        background-image: radial-gradient(rgba(255, 255, 255, 0.1) 2px, transparent 2px);
+        background-size: 33px 33px;
+        text-align: center;
+    }
+
+    .content {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .cont-1 h1 {
+        max-width: 300px;
+        font-size: 2.4rem;
+        line-height: 1.18;
+    }
+
+    .line1 {
+        font-size: 1.3rem;
+    }
+
+    .line2 {
+        font-size: 1.05rem;
+        line-height: 1.75;
+    }
+
+    .cont-2 {
+        height: auto;
+        min-height: 600px;
+        padding: 70px 20px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .cont-2 h2 {
+        font-size: 1.65rem;
+    }
+
+    .d2-line2 {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .cont-2 h1 {
+        margin-top: 25px;
+        font-size: 4.8rem;
+        line-height: 1;
+    }
+
+    .d2-line4 {
+        margin-bottom: 35px;
+        font-size: 1.25rem;
+    }
+
+    .d2-boxes {
+        width: 100%;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .cont-3,
+    .cont-4,
+    .cont-5,
+    .cont-7 {
+        width: 100%;
+        height: auto;
+        padding: 65px 16px;
+    }
+
+    .cont-3 h1,
+    .cont-4 h1,
+    .cont-5 h1,
+    .join-section h1,
+    .d7-head {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .d3-boxes,
+    .d4-boxes {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .d3-box {
+        width: 100%;
+        height: auto;
+        min-height: 170px;
+    }
+
+    .d4-box,
+    .box-c {
+        width: 100%;
+        height: auto;
+        min-height: 190px;
+        grid-column: auto;
+    }
+
+    .list-details {
+        align-items: flex-start;
+    }
+
+    .cont-5 {
+        gap: 30px;
+    }
+
+    .d5-par {
+        line-height: 1.6;
+    }
+
+    .d5-boxes {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .d5-box {
+        width: 100%;
+    }
+
+    .join-section {
+        padding: 65px 16px;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .step {
+        display: flex;
+        text-align: left;
+    }
+
+    .step-top {
+        width: 60px;
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .number {
+        width: 52px;
+        height: 52px;
+    }
+
+    .line {
+        width: 2px;
+        min-height: 65px;
+        flex: 1;
+    }
+
+    .step-content {
+        padding: 12px 0 25px 20px;
+    }
+
+    .step-content p {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .d7-par {
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    .d7-buttons {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .dwnld-btn,
+    .read-btn {
+        width: 100%;
+        padding: 14px 20px;
+    }
+
+    .footer {
+        padding: 48px 16px 0;
+    }
+
+    .footer-top,
+    .links-wrapper,
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .footer-top,
+    .links-wrapper {
+        gap: 32px;
+    }
+
+    .cnt-1 {
+        margin-right: 0;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        gap: 25px;
+    }
+}

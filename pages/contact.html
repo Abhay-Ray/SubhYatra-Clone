@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
     <link rel="stylesheet" href="/public/css/contact.css">
+    <link rel="stylesheet" href="/Responsive/contact-res.css?v=1">
     <link rel="icon" type="image/png" href="/public/Images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
@@ -13,6 +14,8 @@
 
 <body>
     <header>
+        <input class="menu-toggle" type="checkbox" id="contact-menu-toggle">
+
         <div class="navbar">
             <!-- Logo -->
             <div class="logo">
@@ -21,6 +24,7 @@
                 </a>
                 <a href="/index.html">SubhYatra</a>
             </div>
+
             <!-- Navigation -->
             <ul class="nav-links">
                 <li><a href="/pages/ride.html">Ride</a></li>
@@ -30,7 +34,36 @@
                 <li><a href="/pages/contact.html">Contact</a></li>
             </ul>
             <button class="download-btn">Download App</button>
+
+            <label class="menu-btn" for="contact-menu-toggle" aria-label="Open navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
         </div>
+
+        <nav class="mobile-menu" aria-label="Mobile navigation">
+            <div class="mobile-menu-head">
+                <a class="mobile-logo" href="/index.html" aria-label="SubhYatra homepage">
+                    <img src="/public/Images/logo.svg" alt="SubhYatra logo">
+                    <span>SubhYatra</span>
+                </a>
+
+                <label class="close-menu" for="contact-menu-toggle" aria-label="Close navigation menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+            </div>
+
+            <ul class="mobile-nav-links">
+                <li><a href="/pages/ride.html">Ride</a></li>
+                <li><a href="/pages/drive.html">Drive</a></li>
+                <li><a href="/pages/safety.html">Safety</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+
+            <div class="mobile-menu-bottom">
+                <button type="button">Download App</button>
+            </div>
+        </nav>
     </header>
     <!-- top little space -->
     <div class="nav-space"> </div>
@@ -271,6 +304,7 @@
             </div>
         </div>
     </footer>
+    <script src="/public/js/navigation.js"></script>
 </body>
 
 </html>

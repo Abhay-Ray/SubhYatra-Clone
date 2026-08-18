@@ -5,6 +5,12 @@
   font-family: "system-ui", "ui-sans-serif", "Poppins";
 }
 
+body {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 /* HEADER */
 
 header {
@@ -41,13 +47,13 @@ header {
 
 .navbar {
   width: 100%;
-  max-width: 1300px;
-  margin: auto;
-  padding: 22px 0;
+  /* max-width: 1300px; */
+  max-width: 81.25rem;
+  padding: 1.3rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  
 }
 
 /* LOGO */
@@ -55,7 +61,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 .logo img {
@@ -65,8 +71,8 @@ header {
 }
 
 .logo a {
-  margin: 0;
-  font-size: 24px;
+
+  font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
   line-height: 1;
@@ -89,21 +95,21 @@ header {
 
 }
 
+
+
 /* NAVIGATION */
 
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 45px;
-
-
+  gap: 2.81rem;
 }
 
 
 .nav-links a {
   color: #fff;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1rem;
   font-weight: 500;
   position: relative;
 
@@ -131,12 +137,12 @@ header {
 }
 
 .download-btn {
-  padding: 14px 28px;
+  padding: 0.87rem 1.75rem;
   border: none;
   outline: none;
   background: #ffd400;
   color: #111;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   border-radius: 35px;
   cursor: pointer;
@@ -147,14 +153,12 @@ header {
   background: white;
 }
 
-body {
-  height: 100vh;
-}
 
 .main {
-  height: 90%;
-  background: #ffffff1a;
-  /* Background Image */
+  width: 100%;
+  height: 90vh;
+  padding: clamp(1rem, 4vw, 4rem);
+
   background-image:
     linear-gradient(rgba(18, 29, 66, 0.9), rgba(18, 29, 66, 0.9)),
     url("../Images/hero-image.webp");
@@ -162,31 +166,32 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+  box-sizing: border-box;
 }
+
 
 
 /* Hero section */
 .hero {
 
-  max-width: 1300px;
+  max-width: 81.25rem;
   min-height: 85vh;
   margin: auto;
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 240px;
+  gap: 15rem;
 
 }
 
 .hero-content {
-
-  margin-top: 100px;
+  margin-top: 6.25rem;
 }
 
 .top-hero {
   display: flex;
   gap: 10px;
+  margin-bottom: 1rem;
 }
 
 .top-hero p {
@@ -209,7 +214,7 @@ body {
 /* LEFT */
 
 .hero-content h1 {
-  font-size: 60px;
+  font-size: 3.75rem;
   color: #fff;
   line-height: 1.2;
   font-weight: 700;
@@ -217,7 +222,7 @@ body {
 
 .par {
   color: #ddd;
-  font-size: 18px;
+  font-size: 1.12rem;
   line-height: 1.8;
   max-width: 520px;
   margin-bottom: 35px;
@@ -280,15 +285,15 @@ body {
 /* RIGHT Image*/
 
 .img-cont {
-  margin-top: 100px;
-  width: 320px;
-  height: 480px;
+  margin-top: 6.25rem;
+  width: 20rem;
+  height: 30rem;
   position: relative;
 }
 
 .bg-img {
-  width: 320px;
-  height: 480px;
+  width: 100%;
+  height: 100%;
   background: #ffffff1a;
   position: absolute;
   border-radius: 30px;
@@ -297,8 +302,8 @@ body {
 
 
 .hero-image {
-  width: 320px;
-  height: 480px;
+  width: 100%;
+  height: 100%;
   border-radius: 30px;
   position: absolute;
   transform: rotate(5deg);
