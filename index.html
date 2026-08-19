@@ -13,7 +13,7 @@
 
 <body>
   <div class="main">
-  
+
     <header>
       <input class="menu-toggle" type="checkbox" id="menu-toggle" />
 
@@ -25,7 +25,7 @@
           </a>
           <a class="lname" href="/index.html">SubhYatra</a>
         </div>
-        
+
         <!-- Main navigation -->
         <ul class="nav-links">
           <li><a href="/pages/ride.html">Ride</a></li>
@@ -480,32 +480,34 @@
   </div>
   <!-- container-6 -->
   <div class="cont-6">
-    <!-- left side -->
-    <div class="D6-lft">
-      <p class="d5-top">Public Beta</p>
-      <h1 class="d5-heading">Download the SubhYatra App</h1>
-      <p class="d5-details">SubhYatra Public Beta is live on Android.</p>
-      <!-- lists -->
-      <ul class="d6-lists">
-        <li><i class="fa-solid fa-check"></i>Book rides in seconds</li>
-        <li><i class="fa-solid fa-check"></i>Track your driver in real-time</li>
-        <li><i class="fa-solid fa-check"></i>Safe and secure payments</li>
-        <li><i class="fa-solid fa-check"></i>Switch between rider & driver mode</li>
-      </ul>
-      <!-- d6-button -->
-      <div class="d6-btn">
-        <i class="fa-solid fa-play"></i>
-        <div class="btn-details">
-          <p class="btn-up">GET IT ON</p>
-          <p class="btn-dn">Google Play</p>
+    <div class="d6-content">
+      <!-- left side -->
+      <div class="D6-lft">
+        <p class="d5-top">Public Beta</p>
+        <h1 class="d5-heading">Download the SubhYatra App</h1>
+        <p class="d5-details">SubhYatra Public Beta is live on Android.</p>
+        <!-- lists -->
+        <ul class="d6-lists">
+          <li><i class="fa-solid fa-check"></i>Book rides in seconds</li>
+          <li><i class="fa-solid fa-check"></i>Track your driver in real-time</li>
+          <li><i class="fa-solid fa-check"></i>Safe and secure payments</li>
+          <li><i class="fa-solid fa-check"></i>Switch between rider & driver mode</li>
+        </ul>
+        <!-- d6-button -->
+        <div class="d6-btn">
+          <i class="fa-solid fa-play"></i>
+          <div class="btn-details">
+            <p class="btn-up">GET IT ON</p>
+            <p class="btn-dn">Google Play</p>
+          </div>
         </div>
+        <p class="lft-end">
+          Android beta is live. iOS version is coming soon.
+        </p>
       </div>
-      <p class="lft-end">
-        Android beta is live. iOS version is coming soon.
-      </p>
+      <!-- right side -->
+      <div class="d6-img-cont"> </div>
     </div>
-    <!-- right side -->
-    <img class="d6-img" src="/public/Images/Hero.webp" alt="image not found">
   </div>
 
   <!-- footer -->
@@ -589,16 +591,6 @@
     </div>
   </footer>
 
-  <script>
-    const header = document.querySelector("header");
-
-    function updateNavbar() {
-      header.classList.toggle("scrolled", window.scrollY > 10);
-    }
-
-    updateNavbar();
-    window.addEventListener("scroll", updateNavbar);
-  </script>
 </body>
 
 </html>

@@ -53,7 +53,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
 }
 
 /* LOGO */
@@ -239,9 +239,9 @@ header {
   margin-bottom: 10px;
   border-radius: 8px;
   background: #ffd400;
-  font-size: 18px;
-  font-weight: 600;
-  color: #111;
+  font-size: 1rem;
+  font-weight: 759;
+  color: #182b48;
   border-radius: 40px;
   cursor: pointer;
 
@@ -826,9 +826,14 @@ header {
 /* container-6 */
 .cont-6 {
   height: 800px;
-  background-color: #f1f5f9;
+  background-color: #f8fafc;
   display: flex;
-  align-items: center;
+  justify-content: center;
+}
+
+.d6-content {
+  margin-top: 100px;
+  display: flex;
   justify-content: center;
   gap: 330px;
 
@@ -892,18 +897,21 @@ header {
   color: #868080;
 }
 
-/* d6-img */
 
-.d6-img {
+.d6-img-cont {
   width: 300px;
   height: 600px;
-  border-radius: 60px;
+  background-image: url("/public/Images/Hero.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   border: 10px solid #182b48;
+  border-radius: 50px;
 }
 
 /* footer */
 .footer {
-  background-color: #12142b;
+  background-color: #182b48;
   color: #b7b9c9;
   padding: 48px 60px 0;
 

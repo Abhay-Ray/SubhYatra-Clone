@@ -7,15 +7,16 @@
   display: none;
 }
 
-.mobile-logo,
-.mobile-logo:hover,
-.mobile-logo:focus,
-.mobile-logo:active {
-  background-color: transparent;
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  user-select: none;
+
+
+@keyframes mobile-menu-scroll {
+  from {
+    color: #ffffff;
+  }
+
+  to {
+    color: #182b48;
+  }
 }
 
 /* Mobile screens only */
@@ -26,8 +27,9 @@
     left: 0;
     width: 100%;
     background-color: transparent;
-    animation: none;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    animation: header-scroll linear both;
+    animation-timeline: scroll();
+    animation-range: 0 10px;
   }
 
   .menu-toggle {
@@ -56,8 +58,9 @@
   .logo a {
     color: #ffffff;
     font-size: 1.65rem;
-    animation: none;
-    transition: color 0.3s ease;
+    animation: logo-scroll linear both;
+    animation-timeline: scroll();
+    animation-range: 0 10px;
   }
 
   .nav-links {
@@ -76,17 +79,9 @@
     color: #ffffff;
     font-size: 1.5rem;
     cursor: pointer;
-    transition: color 0.3s ease;
-  }
-
-  header.scrolled {
-    background-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  header.scrolled .logo a,
-  header.scrolled .menu-btn {
-    color: #182b48;
+    animation: mobile-menu-scroll linear both;
+    animation-timeline: scroll();
+    animation-range: 0 10px;
   }
 
   .mobile-menu {
@@ -103,7 +98,8 @@
     z-index: 1100;
   }
 
-  .menu-toggle:checked ~ .mobile-menu {
+  /* ~ :selects a sibling element that appears later in the HTML. */
+  .menu-toggle:checked~.mobile-menu {
     transform: translateY(0);
   }
 
@@ -209,50 +205,64 @@
     width: max-content;
     padding: 0.55rem 1.1rem;
     font-size: 0.94rem;
-    
+
   }
+
   .hero-content h1 {
     display: inline;
     font-size: 2rem;
     line-height: 1.24;
   }
-  
+
   .hero-content .par {
     max-width: 100%;
     margin: 1.35rem auto 1.8rem;
     font-size: 1rem;
     line-height: 1.55;
   }
+
   .hero-content br {
     display: none;
   }
+
   .hero-btn {
     width: 100%;
-    min-height: 55px;
+
     margin: 0 auto 0.8rem;
     justify-content: center;
     border-radius: 999px;
-  }
-  .hero-btn i {
-    margin-left: 0.75rem;
+    white-space: nowrap;
+    font-size: 1.1rem;
   }
 
-  .hero-btn + .par {
+  .hero-btn i {
+    margin-left: 0.75rem;
+    flex-shrink: 0;
+  }
+
+  .hero-btn+.par {
     margin: 0.85rem 0 0;
     font-size: 0.9rem;
   }
+
   .img-cont {
     width: min(76vw, 19rem);
     height: min(118vw, 30rem);
     margin-top: 0;
   }
 
-  .container1, .container2, .container3, .container4, .d5, .cont-6 {
+  .container1,
+  .container2,
+  .container3,
+  .container4,
+  .d5,
+  .cont-6 {
     width: 100%;
     height: auto;
     min-height: 0;
     padding: 4rem 1rem;
   }
+
   .container1,
   .container2 {
     gap: 1.5rem;
@@ -264,11 +274,17 @@
   .d5-top {
     margin-top: 0;
   }
-  .container1 h1, .container2 h1, .cont2-head, .container4 > h1, .d5-heading {
+
+  .container1 h1,
+  .container2 h1,
+  .cont2-head,
+  .container4>h1,
+  .d5-heading {
     font-size: clamp(1.75rem, 7vw, 2.25rem);
     text-align: center;
   }
-  .container2 > p,
+
+  .container2>p,
   .cont2-par,
   .d5-details {
     text-align: center;
@@ -285,11 +301,14 @@
     min-height: 240px;
     margin: 0;
   }
-  .content3, .mid-boxes {
+
+  .content3,
+  .mid-boxes {
     width: 100%;
     margin-top: 2rem;
     grid-template-columns: 1fr;
   }
+
   .boxc,
   .d4-mBox {
     width: 100%;
@@ -311,12 +330,15 @@
     font-size: 1.2rem;
   }
 
-  .last-boxes, .d5-boxA, .d5-end-cont {
+  .last-boxes,
+  .d5-boxA,
+  .d5-end-cont {
     width: 100%;
     height: auto;
     flex-direction: column;
     gap: 1rem;
   }
+
   .d4-lbox,
   .box-d5A,
   .d5-end {
@@ -358,10 +380,15 @@
     margin-inline: 0;
   }
 
-  .cont-6 {
+
+  .d6-content {
     flex-direction: column;
     gap: 3rem;
+    width: 100%;
+    min-height: 0;
+    margin-top: -0px;
   }
+
 
   .D6-lft {
     align-items: center;
@@ -371,9 +398,11 @@
     width: 100%;
   }
 
-  .d6-img {
-    width: min(75vw, 300px);
-    height: auto;
+  .d6-img-cont {
+    width: clamp(250px, 65vw, 300px);
+    height: clamp(500px, 125vw, 600px);
+    margin: 0 auto;
+    /* This maintains proportion because both use vw */
   }
 
   .footer {

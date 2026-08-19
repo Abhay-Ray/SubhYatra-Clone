@@ -82,7 +82,7 @@
         z-index: 1100;
     }
 
-    .menu-toggle:checked ~ .mobile-menu {
+    .menu-toggle:checked~.mobile-menu {
         transform: translateY(0);
     }
 
